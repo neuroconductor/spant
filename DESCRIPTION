@@ -3,52 +3,27 @@ Type: Package
 Title: MR Spectroscopy Analysis Tools
 Version: 1.12.0
 Date: 2021-05-05
-Authors@R: c(
-    person("Martin", "Wilson", email = "martin@pipegrep.co.uk",
-           role = c("cre", "aut"), comment = c(ORCID = "0000-0002-2089-3956")),
-    person("Yong", "Wang", role = "ctb"),
-    person("John", "Muschelli", role = "ctb"))
-Description: Tools for reading, visualising and processing Magnetic Resonance
-    Spectroscopy data. The package includes methods for spectral fitting: Wilson
-    (2021) <DOI:10.1002/mrm.28385> and spectral alignment: Wilson (2018)
-    <DOI:10.1002/mrm.27605>. 
+Authors@R: c( person("Martin", "Wilson", email =
+        "martin@pipegrep.co.uk", role = c("cre", "aut"), comment =
+        c(ORCID = "0000-0002-2089-3956")), person("Yong", "Wang", role
+        = "ctb"), person("John", "Muschelli", role = "ctb"))
+Description: Tools for reading, visualising and processing Magnetic
+        Resonance Spectroscopy data. The package includes methods for
+        spectral fitting: Wilson (2021) <DOI:10.1002/mrm.28385> and
+        spectral alignment: Wilson (2018) <DOI:10.1002/mrm.27605>.
 BugReports: https://github.com/martin3141/spant/issues/
 License: GPL-3
 RoxygenNote: 7.1.1
-Roxygen: list(markdown = TRUE, roclets = c("rd", "namespace", "collate"))
+Roxygen: list(markdown = TRUE, roclets = c("rd", "namespace",
+        "collate"))
 NeedsCompilation: yes
 LazyData: yes
-Depends:
-    R (>= 2.10)
-Imports:
-    abind,
-    plyr,
-    foreach,
-    pracma,
-    stringr,
-    complexplus,
-    signal,
-    matrixcalc,
-    minpack.lm,
-    nnls,
-    utils,
-    graphics,
-    grDevices,
-    smoother,
-    readr,
-    magrittr,
-    ptw,
-    mmand,
-    RNifti,
-    RNiftyReg,
-    fields,
-    MASS,
-    numDeriv,
-    nloptr,
-    irlba,
-    tibble,
-    jsonlite
-Suggests:
+Depends: R (>= 2.10)
+Imports: abind, plyr, foreach, pracma, stringr, complexplus, signal,
+        matrixcalc, minpack.lm, nnls, utils, graphics, grDevices,
+        smoother, readr, magrittr, ptw, mmand, RNifti, RNiftyReg,
+        fields, MASS, numDeriv, nloptr, irlba, tibble, jsonlite
+Suggests: 
     viridisLite,
     shiny,
     miniUI,
@@ -56,11 +31,16 @@ Suggests:
     rmarkdown,
     testthat,
     ragg,
-    doParallel
-VignetteBuilder:
-    knitr
+    doParallel,
+    covr
+VignetteBuilder: knitr
 Encoding: UTF-8
 Language: en-GB
-URL:
-    https://martin3141.github.io/spant/,
-    https://github.com/martin3141/spant/
+URL: https://martin3141.github.io/spant/,
+        https://github.com/martin3141/spant/
+Repository: Neuroconductor
+Remotes: 
+    neuroconductor/RNifti@929106d1b17d6c09c8b001b5e39d448ed9ef635f,
+    neuroconductor/mmand@4b29cf309724e651dfd7469311119464fdd0d0fc,
+    neuroconductor/RNiftyReg@9d60058f630e131852ec4b990b16ca462dbf5bfc
+biocViews: 

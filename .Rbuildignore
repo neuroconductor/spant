@@ -14,3 +14,7 @@
 ^Meta$
 ^pkgdown$
 ^\.github$
+^DESCRIPTION\.bak$
+^autoci\.yml$
+^autoci_pkgdown\.yml$
+^tic\.R$
